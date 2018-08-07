@@ -41,6 +41,7 @@ export default {
     color: #ccc
     flex: 1
     padding-left: .2rem
+    font-size .24px
     *
       vertical-align: middle
     span
