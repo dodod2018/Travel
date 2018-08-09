@@ -7,10 +7,12 @@
         <span class="iconfont icon-sousuo"></span>
         输入城市/景点/游玩主题
       </div>
-      <div class="header-right">
-        城市
-        <span class="iconfont icon-jiantouarrow486"></span>
-      </div>
+      <router-link to="/city">
+        <div class="header-right">
+          {{this.$store.state.city}}
+          <span class="iconfont icon-jiantouarrow486"></span>
+        </div>
+      </router-link>
     </div>
 </template>
 <script>
@@ -41,7 +43,8 @@ export default {
     color: #ccc
     flex: 1
     padding-left: .2rem
-    font-size .24px
+    font-size .24rem
+    margin-right .24rem
     *
       vertical-align: middle
     span
@@ -49,6 +52,7 @@ export default {
   .header-right
     width:1.4rem
     text-align: center
+    color #fff
     span
       vertical-align: middle
 </style>
